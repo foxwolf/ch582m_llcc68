@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "openocd",
+            "servertype": "openocd",
+            "executable": "build\\Debug\\CH582M_TEMP.elf",
+            "showDevDebugOutput": "none",
+            "device": "CH582M",
+            "runToEntryPoint": "main",
+            "svdFile": "D:/develop/sdk/MounRiver/MounRiver_Studio/template/wizard/WCH/RISC-V/CH58X/NoneOS/CH58Xxx.svd",
+            "toolchainPrefix": "D:/develop/sdk/xpack-riscv-none-embed-gcc-10.2.0-1.2/bin/riscv-none-embed",
+            "configFiles": [
+                "${workspaceFolder}/tools/wch-riscv.cfg"
+            ],
+            "preLaunchCommands": [
+                "set mem inaccessible-by-default off",
+                "set architecture riscv:rv32",
+                "set remotetimeout unlimited"
+            ]
+        }
+    ]
+}
