@@ -1,5 +1,5 @@
 {
-  "name": "ch582m_temp",
+  "name": "ch582m_llcc68",
   "type": "RISC-V",
   "dependenceList": [],
   "srcDirs": [],
@@ -153,7 +153,7 @@
       },
       "uploader": "Custom",
       "uploadConfig": {
-        "bin": "./build/Debug/ch582m_temp.hex",
+        "bin": "./build/Debug/ch582m_llcc68.hex",
         "commandLine": "download.cmd ${hexFile}",
         "eraseChipCommand": ""
       },

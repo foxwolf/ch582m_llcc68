@@ -7,7 +7,7 @@
             "request": "launch",
             "name": "openocd",
             "servertype": "openocd",
-            "executable": "build\\Debug\\CH582M_TEMP.elf",
+            "executable": "build\\Debug\\ch582m_llcc68.elf",
             "showDevDebugOutput": "none",
             "device": "CH582M",
             "runToEntryPoint": "main",
