@@ -1,5 +1,5 @@
 {
-    "version": 1,
+    "version": 2,
     "beforeBuildTasks": [],
     "afterBuildTasks": [],
     "global": {
@@ -7,7 +7,7 @@
         "arch": "rv32imac",
         "abi": "ilp32",
         "code-model": "medany",
-        "misc-control": "-msmall-data-limit=8 -mno-save-restore"
+        "misc-control": "-msmall-data-limit=8 -mno-save-restore --specs=nosys.specs --specs=nano.specs"
     },
     "c/cpp-compiler": {
         "language-c": "c99",
@@ -21,7 +21,7 @@
     },
     "linker": {
         "output-format": "elf",
-        "LD_FLAGS": "-Wl,--cref -Wl,--gc-sections --specs=nosys.specs --specs=nano.specs -nostartfiles",
+        "LD_FLAGS": "-Wl,--cref -Wl,--gc-sections   -nostartfiles",
         "LIB_FLAGS": "-lISP583 -lCH58xBLE",
         "remove-unused-input-sections": true
     }

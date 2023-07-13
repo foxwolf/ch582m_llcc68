@@ -27,7 +27,8 @@
             "editor.autoIndent": "advanced"
         },
         "EIDE.RISCV.InstallDirectory": "d:\\develop\\sdk\\MounRiver\\MounRiver_Studio\\toolchain\\RISC-V Embedded GCC",
-        "C_Cpp.errorSquiggles": "disabled"
+        "C_Cpp.errorSquiggles": "disabled",
+        "cortex-debug.variableUseNaturalFormat": false
     },
     "extensions": {
         "recommendations": [

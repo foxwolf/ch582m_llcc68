@@ -29,6 +29,69 @@
         "folders": []
       },
       {
+        "name": "lora",
+        "files": [],
+        "folders": [
+          {
+            "name": "driver",
+            "files": [
+              {
+                "path": "lora/driver/ch58x-board.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "peripherals",
+            "files": [],
+            "folders": [
+              {
+                "name": "radio",
+                "files": [],
+                "folders": [
+                  {
+                    "name": "llcc68",
+                    "files": [
+                      {
+                        "path": "lora/peripherals/radio/llcc68/llcc68.c"
+                      },
+                      {
+                        "path": "lora/peripherals/radio/llcc68/radio.c"
+                      }
+                    ],
+                    "folders": []
+                  },
+                  {
+                    "name": "llcc68_example",
+                    "files": [],
+                    "folders": [
+                      {
+                        "name": "llcc68_recive",
+                        "files": [
+                          {
+                            "path": "lora/peripherals/radio/llcc68_example/llcc68_recive/llcc68_example_recive.c"
+                          }
+                        ],
+                        "folders": []
+                      },
+                      {
+                        "name": "llcc68_send",
+                        "files": [
+                          {
+                            "path": "lora/peripherals/radio/llcc68_example/llcc68_send/llcc68_example_send.c"
+                          }
+                        ],
+                        "folders": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "RVMSIS",
         "files": [
           {
@@ -186,7 +249,12 @@
           "HAL/include",
           "StdPeriphDriver/inc",
           "RVMSIS",
-          "LIB"
+          "LIB",
+          "lora/driver",
+          "lora/peripherals/radio/llcc68",
+          "lora/peripherals/radio",
+          "lora/peripherals/radio/llcc68_example/llcc68_recive",
+          "lora/peripherals/radio/llcc68_example/llcc68_send"
         ],
         "libList": [
           "StdPeriphDriver",
@@ -194,8 +262,7 @@
         ],
         "sourceDirList": [],
         "defineList": [
-          "DEBUG=1",
-          "CLK_OSC32K=0"
+          "DEBUG=1"
         ]
       }
     }

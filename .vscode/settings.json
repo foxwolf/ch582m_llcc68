@@ -1,1 +1,3 @@
-{}
+{
+    "C_Cpp.clang_format_style": "{BasedOnStyle: Google, DerivePointerAlignment: false, PointerAlignment: Left, IndentWidth: 2, ColumnLimit: 0}"
+}
